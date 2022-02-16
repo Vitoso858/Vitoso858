@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Receitas</h1>
+      <!--Imagem do logotipo-->
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="" class="nav-link">Home</a></li>
+        <li><a href="" class="nav-link">Receitas</a></li>
+        <li><a href="" class="nav-link">Vídeos</a></li>
+      </ul>
+    </nav>
+
+    <hr class="nav" />
+
+    <h2>Destaques</h2>
+
+    <main>
+      <div class="container-destaques">
+        <!--Adicionar imagens contendo destaques-->
+        <!--Problemas na responsividade das imagens -->
+        <div class="imgs-1">
+          <!--
+          <img
+            srcset="
+              media/tiramisu-300.jpg 300w,
+              media/tiramisu-400.jpg 400w,
+              media/tiramisu.jpg     500w
+            "
+            sizes="(max-width: 1300px) 400px, 500px (max-width: 900px) 300px, 400px"
+            src="media/tiramisu.jpg"
+            alt="imagem de um tiramisu"
+          />-->
+
+          <picture>
+            <source
+              media="(min-width: 1300px)"
+              srcset="media/bolodecenoura.jpeg"
+            />
+            <source
+              media="(min-width: 900px)"
+              srcset="media/bolodecenoura-400.jpeg"
+            />
+            <source
+              media="(min-width: 300px)"
+              srcset="media/bolodecenoura-300.jpeg"
+            />
+
+            <img
+              src="media/bolodecenoura.jpeg"
+              alt="imagem de um bolo de cenoura"
+            />
+          </picture>
+
+          <picture>
+            <source media="(min-width: 1300px)" srcset="media/tiramisu.jpg" />
+            <source
+              media="(min-width: 900px)"
+              srcset="media/tiramisu-400.jpg"
+            />
+            <source
+              media="(min-width: 300px)"
+              srcset="media/tiramisu-300.jpg"
+            />
+
+            <img src="media/tiramisu.jpg" alt="imagem de um tiramisu" />
+          </picture>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Receitas</a></li>
+        <li><a href="">Vídeos</a></li>
+      </ul>
+      <hr />
+      <p>© 2022 Receitas. Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
